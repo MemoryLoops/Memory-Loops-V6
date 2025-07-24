@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Loops - Family Memories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Memory Loops</h1>
+        <h2>Family Memories</h2>
+        <p>Select a memory prompt:</p>
+        <select id="promptSelect">
+            <option value="1">A moment you’ll never forget with them</option>
+            <option value="2">Something they always said</option>
+            <option value="3">The last time you made them laugh</option>
+            <option value="4">What you miss most</option>
+            <option value="5">A lesson they taught you</option>
+            <option value="6">One day you’d relive with them if you could</option>
+        </select>
+        <textarea id="memoryInput" placeholder="Type your memory here..."></textarea>
+        <button onclick="generateMemory()">Generate Memory</button>
+        <div id="output"></div>
+        <button onclick="exportPDF()">Export as PDF</button>
+    </div>
+    <script src="html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
